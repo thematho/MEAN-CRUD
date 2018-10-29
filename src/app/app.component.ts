@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private http: HttpClient) { }
   onClick() {
     this.http.get('/api/users')
-      .subscribe((response) => {
+      .subscribe((response: { name: string }) => {
         this.title = response.name;
         console.log(response.name);
       });
