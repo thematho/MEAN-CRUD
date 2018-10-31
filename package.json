@@ -6,7 +6,7 @@
     "start": "node server/bin/www",
     "start:dev": "concurrently --kill-others \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "ng serve --proxy-config proxy.config.json",
-    "start:backend": "nodemon server/bin/www --watch server",
+    "start:backend": "nodemon --inspect server/bin/www --watch server",
     "build": "ng build",
     "prod": "ng build --prod",
     "test": "ng test",

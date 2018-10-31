@@ -6,6 +6,7 @@ const logger = require('morgan');
 const app = express();
 const router = express.Router();
 
+const db = require('./models/db');
 // Routers
 const userRouter = require('./routes/user.router');
 const taskRouter = require('./routes/task.router');
