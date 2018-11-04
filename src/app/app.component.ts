@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'CRUD';
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
   constructor(private http: HttpClient) { }
   onClick() {
